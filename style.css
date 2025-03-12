@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* ------------------------------------NAVBAR--------------------------- */
+
+.nav {
+    font-size: 2em;
+    position: fixed;
+    display: grid;
+    width:99%;
+    grid-template-columns: 2.3fr 1.2fr;
+    padding: 1.4rem;
+    color: #ffffff;
+    background-color: #292E35;
+   
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap :0.5em;
+}
+
+.text_nav{
+    font-size: 0.7em;
+
+}
+
+
+
+/* ------------------------------------SECTION1--------------- */
+.section1 {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 0.7fr 2.5fr;
+    padding:1em 2em;
+    align-items: center;
+    font-size: 2em;
+    gap: 0.3em;
+
+}
+
+.section1 img {
+    height: 12em;
+
+}
+
+
+.text1 h1{
+    color: #a202ff;
+}
+.text1 p{
+    margin: 0.5em;
+}
+
+.btn1{
+    padding: 0.6em;
+    margin: 0.4em 0.4em;
+    font-size: 1em;
+    border-radius: 15px;
+    background-color: #a202ff;
+    color: #ffffff;
+    border:0.5px solid#adb1b6;
+}
+
+/* ------------------------------------SECTION2-------------------------------- */
+.section2 {
+    background-color: #a202ff;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1em 5em;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.section2 img {
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.section2 h6 {
+    margin: 1em;
+    font-weight: 10;
+}
+/* ------------------------------------SECTION3---------------------------- */
+
+.section3{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+}
+.section3 h1{
+    font-size: 3em;
+    margin: 0.7em;
+
+}
+.proyectos{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    margin: 2em 3em;
+    gap: 1.5em;
+}
+.proyecto img{
+    border-radius: 10px 0 0;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.proyecto{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #292E35;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.text_proyec{
+    margin-top: 1em;
+}
+.text_proyec p{
+    margin: 1em;
+}
+ .btn2{
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    border-radius: 10px;
+    background-color: #a202ff;
+    color: #ffffff;
+    border:0.5px solid#adb1b6;
+ }
+
+/* ------------------------------------FOTTER------------------------------ */
+
+footer{
+    display: flex;
+    justify-content: right;
+    padding: 1em;
+    background-color: #292E35;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+/* ------------------------------------MEDIA QUERIES--------------------------- */
+@media(max-width:1500px){
+    .nav{
+        grid-template-columns:2fr 1.5fr ;
+    } 
+.section1{
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .section2{
+        padding: 1em 2em;
+    }
+    .proyectos{
+        margin: 2em 1em;
+    }
+    
+}
+
+@media(max-width:1250px){
+    .section1{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .proyectos{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media(max-width:900px){
+    .nav{
+        grid-template-columns: 1fr 1fr;
+    }
+    .section1{
+        padding: 1em;
+    }
+    .section2{
+        padding:  1em;
+    }
+    .proyectos{
+        grid-template-columns: 1fr;
+        margin: 1em 3em;
+    }
+}
+
+@media(max-width:850px){
+    .nav{
+        grid-template-columns: 1fr 0.8fr
+    }
+    .nav ul{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .section1{
+        padding: 1em;
+        margin-top: 3em;
+    }
+    .section2{
+        padding:  1em;
+    }
+    .proyectos{
+        grid-template-columns: 1fr;
+        margin: 1em 2em;
+    }
+}
+
+@media(max-width:600px){
+   
+    .section1{
+        padding: 1em;
+        margin-top: 4em;
+    }
+    .section2{
+        padding:  1em;
+    }
+    .proyectos{
+        grid-template-columns: 1fr;
+        margin: 1em 1em;
+    }
+}
