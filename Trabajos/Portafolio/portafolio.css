@@ -6,7 +6,6 @@
 .main {
     display: grid;
     grid-template-columns: 1fr;
-    border: solid 1px #b700f4;
 }
 
 /* ------------------------------------NAVBAR--------------------------- */
