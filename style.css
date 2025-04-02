@@ -1,12 +1,13 @@
 * {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family:'Times New Roman', Times, serif;
 }
 
 
 .main {
     display: grid;
     grid-template-columns: 1fr;
+    border: solid 1px #f61d1d;
 }
 
 /* ------------------------------------NAVBAR--------------------------- */
@@ -14,25 +15,14 @@
 .nav {
     font-size: 2em;
     position: fixed;
-    display: grid;
+    display: flex;
+    justify-content:center;
     width:99%;
-    grid-template-columns: 2.3fr 1.2fr;
     padding: 1.4rem;
     color: #ffffff;
     background-color: #292E35;
-   
 }
 
-.nav ul{
-    list-style: none;
-    display: flex;
-    gap :0.5em;
-}
-
-.text_nav{
-    font-size: 0.7em;
-
-}
 
 
 
@@ -43,7 +33,8 @@
     grid-template-columns: 0.7fr 2.5fr;
     padding:1em 2em;
     align-items: center;
-    font-size: 2em;
+    justify-content: center;
+    font-size: 1.7em;
     gap: 0.3em;
 
 }
@@ -64,7 +55,7 @@
 .btn1{
     padding: 0.6em;
     margin: 0.4em 0.4em;
-    font-size: 1em;
+    font-size: 0.7em;
     border-radius: 15px;
     background-color: #a202ff;
     color: #ffffff;
@@ -101,7 +92,7 @@
 
 }
 .section3 h1{
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0.7em;
 
 }
@@ -150,7 +141,7 @@ footer{
     justify-content: right;
     padding: 1em;
     background-color: #292E35;
-    font-size: 1.3em;
+    font-size: 1em;
     color: #ffffff;
 }
 
@@ -219,7 +210,7 @@ footer{
     }
 }
 
-@media(max-width:600px){
+@media(max-width:660px){
    
     .section1{
         padding: 1em;
@@ -228,8 +219,34 @@ footer{
     .section2{
         padding:  1em;
     }
+    .section2 img{
+        width: 50%;
+    }
     .proyectos{
         grid-template-columns: 1fr;
         margin: 1em 1em;
+    }
+}
+
+@media(max-width:384px){
+    .nav{
+        padding: 0.5em;
+    }
+    .section1{
+        padding: 0.5em;
+        margin-top: 3em;
+    }
+    .figure img{
+        height: 40%;
+    }
+    .section2{
+        padding:  0.5em;
+    }
+    .section2 img{
+        width: 50%;
+    }
+    .proyectos{
+        grid-template-columns: 1fr;
+        margin:0.5em;
     }
 }

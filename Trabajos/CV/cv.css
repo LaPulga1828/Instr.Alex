@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #e4e4e4;
+    padding: 2rem;
+}
+
+.cv {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1.7fr 3.5fr;
+    /* border: solid 1px #f61d1d; */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------Primera section CV ------------------------------*/
+.perfil {
+    position: relative;
+    background-color: #f6911d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.lineas {
+    background-image: repeating-linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8) 0px,
+            rgba(0, 0, 0, 0.8) 3px,
+            transparent 3px,
+            transparent 8px);
+    border-radius: 0% 100% 100% 0;
+    width: 18rem;
+    height: 17.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.perfil img {
+    position: absolute;
+    width: 17rem;
+    border-radius: 50%;
+    margin: 2rem 4rem;
+}
+
+.separador1 {
+    border: solid 3px white;
+    width: 1rem;
+}
+
+.h2 {
+    color: white;
+    font-weight: 400;
+    margin: 0.2rem 0rem 1rem;
+}
+
+.datos1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info1 {
+    position: relative;
+    left: -2rem;
+}
+
+/* ---------------------------Segunda section CV ------------------------------*/
+.info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.separador {
+    border: solid 3px #f6911d;
+    width: 1rem;
+}
+
+h2 {
+    color: #f6911d;
+    font-weight: 400;
+    margin: 0.2rem 0rem 1rem;
+}
+
+h1 {
+    color: #404040;
+    font-size: 4rem;
+    font-weight: 550;
+    margin: 1rem 0rem;
+}
+
+.datos {
+    margin: 1rem 0rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.7rem 0rem;
+}
+
+li {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+}
+
+ul {
+    list-style: square;
+    list-style-position: inside;
+    padding: 0;
+}
+
+@media (max-width: 1430px) {
+    .perfil img {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 1270px) {
+    .perfil img {
+        margin: 2rem;
+        width: 15rem;
+    }
+
+    .lineas {
+        height: 15.6rem;
+        width: 14rem;
+    }
+
+    .cv {
+        width: 93%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cv {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil {
+        flex-direction: row;
+        gap : 4rem;
+    }
+
+    .perfil img {
+        width: 17rem;
+
+    }
+
+    .lineas {
+        height: 17.6rem;
+        width: 17.6rem;
+    }
+
+    .datos1{
+        margin:3rem;
+        align-items: flex-start;
+    }
+
+    .info1 {
+        left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 0rem;
+    }
+
+    .cv {
+        width: 100%;
+    }
+
+    .perfil img {
+        width: 15rem;
+        margin: 2rem 3rem;
+    }
+
+    .lineas {
+        height: 15.6rem;
+        width: 16rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .perfil{
+        flex-direction: column;}
+}
+
+@media (max-width: 375px) {
+    .main {
+        padding: 0rem;
+    }
+    .perfil img {
+        margin: 2rem 1rem;
+    }
+
+    .datos1{
+        margin: 1rem;
+    }
+}
