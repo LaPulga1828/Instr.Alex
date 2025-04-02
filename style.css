@@ -7,7 +7,7 @@
 .main {
     display: grid;
     grid-template-columns: 1fr;
-    border: solid 1px #f61d1d;
+
 }
 
 /* ------------------------------------NAVBAR--------------------------- */
