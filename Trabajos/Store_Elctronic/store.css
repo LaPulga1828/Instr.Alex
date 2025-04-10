@@ -1,19 +1,200 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "Poppins", sans-serif;
+
 
 }
-body{
+
+.container {
+    border: solid 1px #f61d1d;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------------------------------HEADER---------------------------------------- */
+
+.header {
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+    font-size: 2rem;
+    align-items: center;
 
 }
 
-header{
+.menus {
+    width: 70vw;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 9rem;
+
+}
+
+.menu,
+.menu2 {
+    display: flex;
+    gap: 3rem;
+}
+
+.menu li,
+.menu2 li {
+    cursor: pointer;
+}
+
+/* -----------------------------------------SECTION 1 -----------------------------------------*/
+
+#sec1 {
+    position: relative;
+}
+
+.section1 {
+    position: relative;
+    background-color: #eeeeee;
+    border-radius: 3rem;
+    margin: 1rem;
+    padding: 10rem 5rem;
+    width: 90%;
+}
+
+.sec1-text {
+    position: relative;
+}
+
+.sec1-text h4 {
+    font-size: 1.5vw;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.sec1-text h2 {
+    line-height: 1;
+    font-size: 3.3vw;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.sec1-text h1 {
+    line-height: 1;
+    color: #f8f8f8;
+    font-size: 10vw;
+    font-weight: 900;
+    letter-spacing: -2.9px;
+}
+
+.section1 img {
+    position: absolute;
+    object-fit: cover;
+    top: -15rem;
+    height: 100vh;
+    left: 70%;
+    transform: translateX(-70%);
+}
+
+.sec1-text button {
+    background-color: #f61d1d;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.descripcion {
+    position: relative;
+    left: 95%;
+    transform: translateX(-95%);
+    margin-top: 1rem;
+    max-width: 350px;
+}
+
+.descripcion h6 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.descripcion p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1;
+}
+
+/* ----------------------------------------SECTION 2 ----------------------------------------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    width: 90%;
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.earphone {
+    background-color: #222222;
+    border-radius: 3rem;
+}
+
+.gadgets {
+    background-color: #fec62e;
+    border-radius: 3rem;
+}
+
+.console {
+    background-color: #ededee;
+    border-radius: 3rem;
+}
+
+.laptop {
+    background-color: #f42c37;
+    border-radius: 3rem;
+}
+
+.oculus {
+    background-color: #2dd06f;
+    border-radius: 3rem;
+}
+
+.speaker {
+    background-color: #1689ff;
+    border-radius: 3rem;
+}
+
+
+/*-------------------------------------- MEDIA QUERIES ----------------------------------------*/
+
+@media(max-width:1000px) {
+    .container {
+        margin: 0;
+    }
+
+    .menu,
+    .menu2 {
+        gap: 1rem;
+    }
+}
+
+@media(max-width:700px) {
+    .header {
+        flex-direction: column;
+    }
 }
