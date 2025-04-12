@@ -5,16 +5,10 @@
     text-decoration: none;
     list-style: none;
     font-family: "Poppins", sans-serif;
-
-
 }
 
 .container {
     border: solid 1px #f61d1d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
 }
 
 /* ---------------------------------------------HEADER---------------------------------------- */
@@ -22,48 +16,57 @@
 .header {
     display: flex;
     padding: 1.5rem;
-    gap: 2rem;
-    font-size: 2rem;
-    align-items: center;
-
-}
-
-.menus {
-    width: 70vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header img {
-    width: 9rem;
-
-}
-
-.menu,
-.menu2 {
-    display: flex;
     gap: 3rem;
+    font-size: 1rem;
+    align-items: center;
+
 }
 
-.menu li,
-.menu2 li {
-    cursor: pointer;
+.logo img {
+    scale: 1.2;
+
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    background-color: #eeeeee;
+    padding: 0.5rem;
+    width: 6rem;
+    border-radius: 2rem;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 /* -----------------------------------------SECTION 1 -----------------------------------------*/
 
+/* 
 #sec1 {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section1 {
+
     position: relative;
     background-color: #eeeeee;
     border-radius: 3rem;
-    margin: 1rem;
-    padding: 10rem 5rem;
-    width: 90%;
+    margin: 0 3rem;
 }
 
 .sec1-text {
@@ -93,12 +96,8 @@
 }
 
 .section1 img {
-    position: absolute;
+    overflow: hidden;
     object-fit: cover;
-    top: -15rem;
-    height: 100vh;
-    left: 70%;
-    transform: translateX(-70%);
 }
 
 .sec1-text button {
@@ -116,10 +115,8 @@
 
 .descripcion {
     position: relative;
-    left: 95%;
-    transform: translateX(-95%);
+
     margin-top: 1rem;
-    max-width: 350px;
 }
 
 .descripcion h6 {
@@ -132,10 +129,22 @@
     font-size: 1rem;
     color: #666;
     line-height: 1;
+} */
+
+.section1 {
+    background-color: #eeeeee;
+    border-radius: 3rem;
+    margin: 0.5rem 3rem;
+}
+
+.headphone img {
+    height: 450px;
+    object-fit: cover;
 }
 
 /* ----------------------------------------SECTION 2 ----------------------------------------- */
-.section2 img{
+/* 
+.section2 img {
     width: 100%;
     scale: 0.5;
 
@@ -183,24 +192,46 @@
 .speaker {
     background-color: #1689ff;
     border-radius: 3rem;
-}
+} */
 
 
 /*-------------------------------------- MEDIA QUERIES ----------------------------------------*/
 
-@media(max-width:1000px) {
-    .container {
-        margin: 0;
-    }
+@media(max-width:767px) {
 
-    .menu,
-    .menu2 {
+    /* -------HEADER------ */
+    .header {
+        flex-direction: column;
         gap: 1rem;
+        padding: 1rem;
     }
 }
 
-@media(max-width:700px) {
-    .header {
+@media(max-width:600px) {
+
+    /* -------HEADER------ */
+    .menu {
         flex-direction: column;
+        gap: 0.5rem;
     }
+
+    .home {
+        justify-content: space-around;
+
+    }
+}
+
+@media(max-width:383px) {
+
+    /* -------HEADER------ */
+    .header {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
 }
