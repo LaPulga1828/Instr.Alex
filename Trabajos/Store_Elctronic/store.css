@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 /* ---------------------------------------------HEADER---------------------------------------- */
@@ -134,13 +135,18 @@
 }
 
 /* ----------------------------------------SECTION 2 ----------------------------------------- */
+.section2 img{
+    width: 100%;
+    scale: 0.5;
+
+}
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 1rem;
-    width: 90%;
+
 }
 
 .column1 {
