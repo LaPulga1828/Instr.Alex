@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .main {
     display: grid;
     grid-template-columns: 1fr;
@@ -23,9 +22,6 @@
     background-color: #292E35;
 }
 
-
-
-
 /* ------------------------------------SECTION1--------------- */
 .section1 {
     margin-top: 2em;
@@ -43,7 +39,6 @@
     height: 12em;
 
 }
-
 
 .text1 h1 {
     color: #a202ff;
