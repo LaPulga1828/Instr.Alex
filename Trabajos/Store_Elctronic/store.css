@@ -135,10 +135,13 @@
     background-color: #eeeeee;
     border-radius: 3rem;
     margin: 0.5rem 3rem;
+    position: relative;
 }
 
 .headphone img {
-    height: 450px;
+    position: absolute;
+    height: 100%;
+    
     object-fit: cover;
 }
 
@@ -193,6 +196,50 @@
     background-color: #1689ff;
     border-radius: 3rem;
 } */
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5em; 
+
+    margin: 3rem;
+}
+
+.eadphone {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #222222;
+    border-radius: 3rem;
+}
+
+.gadgets {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #fec62e;
+    border-radius: 3rem;
+}
+
+.laptop {
+    grid-area: 2 / 1 / 3 / 3;
+    background-color: #f42c37;
+    border-radius: 3rem;
+}
+
+.console {
+    grid-area: 1 / 3 / 2 / 5;
+    background-color: #ededee;
+    border-radius: 3rem;
+}
+
+.oculus {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #2dd06f;
+    border-radius: 3rem;
+}
+
+.speaker {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #1689ff;
+    border-radius: 3rem;
+}
 
 
 /*-------------------------------------- MEDIA QUERIES ----------------------------------------*/
