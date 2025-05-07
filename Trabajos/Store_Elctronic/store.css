@@ -282,3 +282,590 @@
     }
 
 }
+
+/* Experimento */
+
+
+
+#todo {
+    margin: 0% 3% 3% 3%;
+  
+  }
+  
+  #primercubo {
+    margin-top: 4%;
+    background: linear-gradient(to right, rgb(163, 163, 163), aliceblue);
+    border-radius: 3%;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 5%;
+  
+  }
+  
+  #imagen1 {
+    height: 540px;
+    width: 540px;
+    position: absolute;
+    top: 9%;
+    right: 33%;
+    z-index: 1;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 7rem);
+    /* Se adapta entre 2rem y 7rem dependiendo del ancho */
+    font-weight: 800;
+    white-space: wrap;
+    /* o normal, si usas Tailwind o raw CSS */
+    word-break: break-word;
+  }
+  
+  #boots {
+    font-size: 40px;
+  }
+  
+  #wireless {
+    font-size: 110px;
+    margin: 0%;
+  }
+  
+  #headphone {
+    font-size: 200px;
+    color: aliceblue;
+    margin: 0;
+  }
+  
+  #partedeabajo1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #boton1 {
+    font-size: 15px;
+    background-color: #ff0000;
+    color: aliceblue;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #descripcion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 500px;
+    padding-top: 2%;
+  
+  }
+  
+  .main {
+    display: flex;
+    padding-top: 2%;
+    gap: 2%;
+  
+    h3 {
+      font-size: 20px;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 20px;
+    }
+  
+    h2 {
+      font-size: 40px;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 20px;
+  
+    }
+  
+    h1 {
+      font-size: 70px;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: 0.6;
+      padding-left: 20px;
+    }
+  
+  }
+  
+  .left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  
+  }
+  
+  .cube {
+    flex: 1;
+    border-radius: 20px;
+  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+  
+  }
+  
+  .earphone {
+    background-color: black;
+  }
+  
+  .watch {
+    background-color: gold;
+  }
+  
+  .laptop-cube {
+    flex: 1;
+    background: linear-gradient(to right, red, #ff6a6a);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    height: 500px;
+  }
+  
+  .cube img {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    height: 70%;
+    width: 80%;
+  }
+  
+  .laptop-cube img {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+    height: 70%;
+    width: 50%;
+  }
+  
+  .buy-btn {
+    margin-top: 20px;
+    background-color: aliceblue;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: #ffffff solid 2px;
+    cursor: pointer;
+    margin-left: 6%;
+  }
+  
+  
+  
+  
+  
+  
+  .main2 {
+    display: flex;
+    padding-top: 2%;
+    gap: 2%;
+  
+    h3 {
+      font-size: 20px;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 20px;
+    }
+  
+    h2 {
+      font-size: 40px;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 20px;
+  
+    }
+  
+    h1 {
+      font-size: 70px;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: 0.6;
+      padding-left: 20px;
+    }
+  
+  }
+  
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  
+  }
+  
+  .cube2 {
+    flex: 1;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+  
+  }
+  
+  .earphone2 {
+    background-color: rgb(0, 255, 136);
+  }
+  
+  .watch2 {
+    background-color: rgb(22, 150, 255);
+  }
+  
+  .ps-cube2 {
+    flex: 1;
+    background: linear-gradient(to right, rgb(163, 163, 163), aliceblue);
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    height: 500px;
+  }
+  
+  .cube2 img {
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    height: 50%;
+    width: 70%;
+  }
+  
+  .ps-cube2 img {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+    height: 70%;
+    width: 50%;
+  }
+  
+  #etiquetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4%;
+  
+    img {
+      height: 70%;
+      width: 18%;
+    }
+  }
+  
+  #etiqueta1 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #cuadrofinal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    background-color: #ff0000;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6%;
+    padding-right: 10%;
+  
+    img {
+      height: 55%;
+      width: 27%;
+  
+      z-index: 5;
+    }
+  
+    h3 {
+      font-size: 20px;
+      color: aliceblue;
+  
+  
+    }
+  
+    h2 {
+      font-size: 400%;
+      color: aliceblue;
+  
+    }
+  
+    h1 {
+      font-size: 750%;
+      color: aliceblue;
+      font-weight: bold;
+      margin: 0;
+  
+    }
+  }
+  
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: red;
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-left,
+  .hero-right {
+    width: 25%;
+    z-index: 2;
+  }
+  
+  .hero-center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .promo {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  .desc {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .extra-text {
+    font-size: 1rem;
+    text-align: right;
+    line-height: 1.5;
+  }
+  
+  #patas {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2%;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-left,
+    .hero-right,
+    .hero-center {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .hero-right {
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-img {
+      width: 70%;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .hero-text h1 {
+      font-size: 8vw;
+    }
+  
+    .hero-text p {
+      font-size: 4vw;
+    }
+  
+    .hero-image {
+      position: relative;
+      transform: none;
+      left: auto;
+      top: auto;
+      width: 60%;
+      margin-top: 1.5rem;
+    }
+  }
+  
+  
+  @media (max-width: 1100px) {
+  
+    .cube,
+    .cube2,
+    .laptop-cube,
+    .ps-cube2 {
+      width: 90%;
+    }
+  
+    .main,
+    .main2,
+    #etiquetas {
+      justify-content: center;
+    }
+  
+    #etiquetas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  
+  
+  @media (max-width: 1024px) {
+  
+    #primercubo,
+    .main,
+    .main2,
+    #etiquetas,
+    #cuadrofinal {
+      flex-direction: column !important;
+      align-items: center;
+    }
+  
+    #imagen1 {
+      position: static;
+      width: 90%;
+      height: auto;
+      margin: 20px 0;
+    }
+  
+    #partedeabajo1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .left-side,
+    .right-side {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .cube,
+    .cube2,
+    .laptop-cube,
+    .ps-cube2 {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+      padding: 20px;
+    }
+  
+    .cube img,
+    .cube2 img,
+    .laptop-cube img,
+    .ps-cube2 img {
+      position: static;
+      width: 80%;
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    #etiquetas {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    #etiqueta1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 45%;
+    }
+  
+    #cuadrofinal {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 300% !important;
+    }
+  
+    h2 {
+      font-size: 180% !important;
+    }
+  
+    h3 {
+      font-size: 100% !important;
+    }
+  
+    #otros {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    #opciones {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    #boton1 {
+      width: 200px;
+      font-size: 14px;
+    }
+  
+    #descripcion1 {
+      width: 100%;
+    }
+  }
