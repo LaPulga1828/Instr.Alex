@@ -8,7 +8,6 @@
 }
 
 .container {
-  border: solid 1px #f61d1d;
   padding: 0 2rem;
 }
 
@@ -71,7 +70,7 @@
 
 #imagen1 {
   width: 900px;
-  
+
   position: absolute;
   top: 13%;
   left: 25%;
@@ -336,7 +335,7 @@
 
   justify-content: space-between;
   margin-top: 4%;
-  margin-bottom: 4%;
+  margin-bottom: 10%;
 
   i {
     font-size: 45px;
@@ -351,76 +350,75 @@
 
 /* -----------------------------------------SECTION 4 -----------------------------------------*/
 
-.hero{
-  margin-top: 200px;
-  width: 100%;
+
+.hijo6 {
   position: relative;
+  background-color: rgba(244, 44, 55, 1);
+  border-radius: 60px;
   display: flex;
-}
-.hero-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
-  background-color: red;
+  justify-content: space-between;
+  padding: 3% 5%;
+  margin-top: 10%;
   color: white;
-  padding: 5rem;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  flex-wrap: wrap;
+  align-items: center;
+
 }
 
-.hero-left,
-.hero-right {
-  width: 20%;
+.hijo6_izquierda,
+.hijo6_derecha {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
   z-index: 2;
 }
 
-.hero-center {
-  margin: auto;
-  width: 45%;
-  position: absolute;
-  z-index: 100;
-  top: -300px;
-  right: 20%;
+.txt_peq {
+  font-size: 100%;
 }
 
-.hero-img {
-  max-width: 100%;
-  height: auto;
+.txt_grande {
+  font-size: 400%;
+  font-weight: 1000;
+  color: white;
+  margin: 10px 0;
 }
 
-.promo {
-  font-size: 1.5rem;
-  margin: 0;
+.txt_peq_abajo {
+  font-size: 90%;
+  color: #f8dada;
+  max-width: 80%;
 }
 
-.title {
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-}
-
-.desc {
-  font-size: 1rem;
-  margin: 1rem 0;
-}
-
-.hero-button {
-  padding: 10px 20px;
+.boton_6_final {
   background-color: white;
-  color: red;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
+  color: rgba(244, 44, 55, 1);
   font-weight: bold;
+  font-size: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 82px;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
-.extra-text {
-  font-size: 1rem;
-  text-align: right;
-  line-height: 1.5;
+.boton_6_final:hover {
+  background-color: #f1f1f1;
+}
+
+.aud_centrada {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 280px;
+  z-index: 10;
 }
 
 
@@ -435,58 +433,26 @@
     padding: 1rem;
   }
 
-  /* Mirar */
-  .hero-container {
+  .hijo6 {
     flex-direction: column;
     text-align: center;
+    padding: 5% 3%;
   }
 
-  .hero-left,
-  .hero-right,
-  .hero-center {
-    width: 100%;
-    margin-bottom: 1rem;
+  .txt_grande {
+    font-size: 200%;
   }
 
-  .hero-right {
-    text-align: center;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .hero-img {
-    width: 70%;
-  }
-
-  /* Mirar */
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-text h1 {
-    font-size: 8vw;
-  }
-
-  .hero-text p {
-    font-size: 4vw;
-  }
-
-  .hero-image {
-    position: relative;
+  .aud_centrada {
+    position: static;
     transform: none;
-    left: auto;
-    top: auto;
-    width: 60%;
-    margin-top: 1.5rem;
+    margin: 20px auto;
+    max-width: 180px;
+  }
+
+  .hijo6_izquierda,
+  .hijo6_derecha {
+    z-index: 2;
   }
 }
 
@@ -635,8 +601,8 @@
 }
 
 @media(max-width:1440px) {
-  #headphone{
+  #headphone {
     font-size: 160px;
   }
-  
+
 }
