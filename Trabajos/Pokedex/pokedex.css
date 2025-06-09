@@ -261,13 +261,13 @@ main {
 @media (max-width:375px) {
 
     .card {
-        width: 320px;
+        width: 310px;
 
     }
 
     #pokemon,
     #pokemon-shiny {
-        width: 270px;
+        width: 260px;
     }
 
     #number {
