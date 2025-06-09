@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    /* background-image:no-repeat url(./img/arena.jpg); */
+    background: url("./img/arena.jpg") center center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    height: 100vh;
+
+}
+
+:root {
+    --primary-color: #e43737;
+    --secondary-color: #c124ff;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --font-family: "Changa", sans-serif;
+
+
+}
+
+/* -------------------------------HEADER --------------------------------------*/
+header figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+    background-color: var(--primary-color);
+    box-shadow: var(--secondary-color) 0px 0px 15px;
+}
+
+header figure img {
+    height: 30px;
+    object-fit: cover;
+}
+
+#pokedex {
+    height: 50px;
+}
+
+.pok-header {
+    width: 50px;
+}
+
+
+/* ----------------------------CONTAINER POKEDEX----------------------------------- */
+
+main {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    gap: 40px;
+    background-color: #ffffffcc;
+    border-radius: 15px;
+}
+
+/*------------- CARD------------------------ */
+.card {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 3s ease;
+}
+
+.card_front,
+.card_back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.card_front {
+
+    z-index: 1;
+}
+
+.card_back {
+
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: perspective(400px) rotateY(180deg);
+}
+
+.card-cont {
+    display: inline-block;
+}
+
+.card-cont:hover .card {
+    transform: perspective(400px) rotateY(180deg);
+}
+
+#pokemon,
+#pokemon-shiny {
+    width: 350px;
+
+}
+
+/*------------------------------------------------------------ */
+
+.gender {
+    padding: 5px;
+    border-radius: 13px;
+    border: 2px solid #ffffff;
+    transition: transform 0.5s ease;
+}
+
+.genders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#male {
+    background-color: #0072b0;
+}
+
+#female {
+    background-color: #dd2d51;
+}
+
+.gender svg {
+    stroke: #ffffff;
+
+}
+
+
+.text {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+#male:hover {
+    background-color: rgb(252, 252, 252);
+    border: 2px solid #0072b0;
+    transform: scale(1.15);
+
+    svg {
+        stroke: #0072b0;
+    }
+}
+
+#female:hover {
+    background-color: rgb(252, 252, 252);
+    border: 2px solid #dd2d51;
+    transform: scale(1.15);
+
+    svg {
+        stroke: #dd2d51;
+    }
+}
+
+/* ---------------INFO -----------------------*/
+
+.info , #stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+
+#number {
+    font-size: 7rem;
+    line-height: 6rem;
+}
+
+
+#types,
+#weaknesses, #abilities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 490px;
+}
+
+.type, .ability{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+    border: 0px solid #ffffff00;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--background-color);
+}
+
+.type:hover, .ability:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.type-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* -------------------Stats -------------------------*/
+
+.stat-bar{
+    background-color: #c124ff4f;
+    border: solid 1px #bbbbbb;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.stat-fill{
+    background-color: #98cc55;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.stat-value{
+    font-weight: bold;
+}
+
+#stats{
+    font-size: 23px;
+}
+
+@media (max-width:444px) {
+    #container-pokedex{
+        padding: 10px;
+        margin: 0;
+        gap:20px;
+    }
+
+    .card{
+        width: 370px;
+        
+    }
+}

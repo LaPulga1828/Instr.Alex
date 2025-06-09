@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pokedex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="./img/Pokebola-pokeball-png-0.png" alt="pokebola" id="pokebola">
+            <img src="https://user-images.githubusercontent.com/29473781/180619084-a56960ab-7efa-4e34-9d33-4e3e581d62ff.png"
+                alt="Pokedex" id="pokedex">
+            <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="Pokedex"
+                id="pokeapi">
+        </figure>
+    </header>
+
+    <main>
+        <div id="container-pokedex">
+            <div  id="carta">
+                <div class="card-cont">
+                    <div class="card">
+                        <div class="card_front">
+                            <h1 id="name"></h1>
+                            <img src="" id="pokemon" alt="Pokemon">
+                            <div class="text">
+                                <p class="altura"></p>
+                                <p class="peso"></p>
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <h1 id="name-shiny"></h1>
+                            <img src="" id="pokemon-shiny" alt="Pokemon">
+                            <div class="text">
+                                <p class="altura"></p>
+                                <p class="peso"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <h1 id="number"></h1>
+                <h1 id="text">Tipos del Pokemon</h1>
+                <div id="types"></div>
+                <h1 id="text">Debilidades del Pokemon</h1>
+                <div id="weaknesses"></div>
+                <h1 id="text">Habilidades del Pokemon</h1>
+                <div id="abilities"></div>
+            </div>
+            <div id="stats"></div>
+            <!-- <p>Hp: <span></span>/255</p> -->
+
+        </div>
+    </main>
+
+</body>
+
+<script src="./pokedex.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</html>
