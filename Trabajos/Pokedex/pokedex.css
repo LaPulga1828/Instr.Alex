@@ -47,7 +47,6 @@ header figure img {
     width: 50px;
 }
 
-
 /* ----------------------------CONTAINER POKEDEX----------------------------------- */
 
 main {
@@ -104,13 +103,17 @@ main {
     transform: rotateY(180deg);
 }
 
+.card:hover {
+    transform: perspective(400px) rotateY(180deg);
+}
 
+.card-cont:hover .card {
+    transform: perspective(400px) rotateY(180deg);
+}
 
 .card-cont {
     display: inline-block;
 }
-
-
 
 #pokemon,
 #pokemon-shiny {
@@ -147,7 +150,6 @@ main {
 
 }
 
-
 .text {
     font-size: 1.5rem;
     display: flex;
@@ -156,7 +158,25 @@ main {
 
 }
 
+#female:hover {
+    background-color: rgb(252, 252, 252);
+    border: 2px solid #dd2d51;
+    transform: scale(1.15);
 
+    svg {
+        stroke: #dd2d51;
+    }
+}
+
+#male:hover {
+    background-color: rgb(252, 252, 252);
+    border: 2px solid #0072b0;
+    transform: scale(1.15);
+
+    svg {
+        stroke: #0072b0;
+    }
+}
 
 /* ---------------INFO -----------------------*/
 
@@ -207,10 +227,15 @@ main {
     color: var(--background-color);
 }
 
-
 .type-icon {
     width: 40px;
     height: 40px;
+}
+
+.type:hover,
+.ability:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 /* -------------------Stats -------------------------*/
@@ -273,85 +298,5 @@ main {
     #number {
         font-size: 6rem;
     }
-
-}
-
-
-
-@media (hover: none) {
-
-    /* Estilos para pantallas táctiles */
-    .card:active {
-        transform: perspective(400px) rotateY(180deg);
-    }
-
-    .card-cont:active .card {
-        transform: perspective(400px) rotateY(180deg);
-    }
-
-    #male:active {
-        background-color: rgb(252, 252, 252);
-        border: 2px solid #0072b0;
-        transform: scale(1.15);
-
-        svg {
-            stroke: #0072b0;
-        }
-    }
-
-    #female:active {
-        background-color: rgb(252, 252, 252);
-        border: 2px solid #dd2d51;
-        transform: scale(1.15);
-
-        svg {
-            stroke: #dd2d51;
-        }
-    }
-
-    .type:active,
-    .ability:active {
-        transform: scale(1.1);
-        transition: 0.3s ease;
-    }
-}
-
-@media (hover: hover) {
-
-    /* Estilos para pantallas con apuntado (ratón) */
-    .card:hover {
-        transform: perspective(400px) rotateY(180deg);
-    }
-
-    .card-cont:hover .card {
-        transform: perspective(400px) rotateY(180deg);
-    }
-
-    #male:hover {
-        background-color: rgb(252, 252, 252);
-        border: 2px solid #0072b0;
-        transform: scale(1.15);
-
-        svg {
-            stroke: #0072b0;
-        }
-    }
-
-    #female:hover {
-        background-color: rgb(252, 252, 252);
-        border: 2px solid #dd2d51;
-        transform: scale(1.15);
-
-        svg {
-            stroke: #dd2d51;
-        }
-    }
-
-    .type:hover,
-    .ability:hover {
-        transform: scale(1.1);
-        transition: 0.3s ease;
-    }
-
 
 }
