@@ -4,32 +4,43 @@
     box-sizing: border-box;
 }
 
+main {
+    background-color: #dfdae7 !important;
+    height: 100vh !important;
+}
+/*-------------- HEADER------------------------------ */
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
     background: linear-gradient(90deg, #7b2cbf, #9d4edd);
 }
 
-.botones{
-    filter: drop-shadow(1px 2px 5px #9d4eddd2);
+.header,
+.navbar-brand {
+    color: #fff !important;
 }
 
-.header, .navbar-brand{
-    color: #fff !important; 
-}
-.btn-outline-success{
-    --bs-btn-border-color:#A5D6A7 !important;
+.btn-outline-success {
+    --bs-btn-border-color: #A5D6A7 !important;
     --bs-btn-color: #4cd350 !important;
 }
 
-main{
-    background-color: #dfdae7!important;
-    height: 100vh !important;
+.botones {
+    filter: drop-shadow(1px 2px 5px #9d4eddd2);
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-#citas{
-    background-color: #dfdae7!important;
+#citas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 80px;
+
+    background-color: #dfdae7 !important;
     height: auto;
 }
+/* --------------CARDS CITAS------------------------ */
 
 .profile-card {
     width: 300px;
@@ -38,6 +49,11 @@ main{
     text-align: center;
     border: 0px !important;
     background-color: #F5F5F5 !important;
+    margin-right: 2rem;
+}
+
+.badge {
+    left: 91% !important;
 }
 
 .col-1,
@@ -73,10 +89,22 @@ main{
     margin: 5px;
 }
 
-#citas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:stretch;
-    gap: 80px;
+/*------------------ MODAL------------------- */
+
+.modal-header{
+    --bs-bg-opacity: 1;
+    background: linear-gradient(212deg, #a871d7, #8e3dcf) !important;
+    color: white;
+}
+
+/*------------------ MEDIAQUERYS ------------------*/
+
+@media(max-width:360px) {
+    .profile-card {
+        margin: 0;
+    }
+
+    .badge {
+        left: 82% !important;
+    }
 }

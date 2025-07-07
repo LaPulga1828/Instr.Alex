@@ -337,7 +337,7 @@ function pintar(filtrado = dataArray) {
         document.getElementById("citas").innerHTML +=
             `
     <div class="card profile-card div position-relative" style="${colorShadow}">
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-success px-4 py-2 fs-6" style="${colorBadge}">${item.estado}</span>
+        <span class="position-absolute top-0 translate-middle badge rounded-pill text-bg-success px-4 py-2 fs-6" style="${colorBadge}">${item.estado}</span>
         <div class="profile-header" style="${background}">
             <p class="text-body-tertiary fw-light position-absolute top-0 start-0 ms-2">#${item.id}</p>
         </div>
@@ -423,8 +423,6 @@ document.getElementById("filter").addEventListener("change", filtrarYCargar);
 document.getElementById("btnBuscar").addEventListener("click", filtrarYCargar);
 
 document.getElementById("inputBuscar").addEventListener("input", filtrarYCargar);
-
-
 
 function toggleSintomas(button) {
     const sintomasDiv = button.closest('.row').querySelector('.sintomas-content');
