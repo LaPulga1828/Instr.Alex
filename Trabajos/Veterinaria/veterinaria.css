@@ -97,6 +97,23 @@ main {
     color: white;
 }
 
+.modal-body {
+    background-color: #dfdae7 !important;
+}
+
+.border{
+    border-color:  #9d4edd !important;
+}
+.modal-footer {
+    --bs-bg-opacity: 1;
+    background: linear-gradient(212deg, #b291ce, #9b63c9) !important;
+    color: white;
+}
+
+legend {
+        color: #005dff;
+        font-weight: 600;
+    }
 /*------------------ MEDIAQUERYS ------------------*/
 
 @media(max-width:360px) {
